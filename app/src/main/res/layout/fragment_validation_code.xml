@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="end"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_amway"
+            android:scaleType="center"
+            android:layout_marginTop="70dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese codigo de empresario"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:inputType="number"
+
+            android:textColor="@android:color/white"
+            app:itemCount="10"
+            app:lineColor="@color/colorPrimary"
+            app:viewType="line"
+            app:itemWidth="20dp"
+
+
+
+            android:layout_below="@+id/textView"
+            android:layout_centerInParent="true"
+            />
+
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/background_button_red"
+            android:text="Validar"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="64dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
